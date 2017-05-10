@@ -1,53 +1,248 @@
-*{
-  margin:0;
-  padding: 0;
-  box-sizing: border-box;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-hr{
-  display: inline-block;
-  color: #fff;
-  width: 105px;
-  height: 5px;
+
+body {
+    color: #fff;
+    font-family: "Montserrat";
 }
-.header{
-  display: flex;
-  position: fixed;
-  background: #2C3E50;
-  width: 100%;
-  height: 100px;
-  z-index: 800px;
-}
-.presentacion{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow: auto;
 }
 
 .presentacion {
-  width: 60px;
-  height: 100px;
+    width: 100%;
+    height: 741px;
+    text-align: center;
+    background: #18BC9C;
+text-align: center;
+    padding-top: 200px;
 }
-.nav-header{
-  display: flex;
-      justify-content: space-around;
-      flex-wrap: nowrap;
-      width: 100%;
-      align-items: center;
+
+.presentacion-fil {}
+
+.presentacion-col {}
+
+.row::before, row::after {
+    content: "";
+    display: table;
 }
-.cont-enlace , .tittle{
-  color: #000;
+
+.row::after {
+    clear: both;
 }
-.enlace {
+
+[class*="col-"] {
+    min-height: 7px;
+    padding: 12px;
+    float: left;
+}
+
+.col-1 {
+    width: 8.333333%;
+}
+
+.col-2 {
+    width: 16.666667%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.333333%;
+}
+
+.col-5 {
+    width: 41.666667%;
+}
+.col-6 {
+    width: 50%;
+}
+.col-12 {
+    width: 100%;
+    text-align: center;
+
+}
+.row.port-row {
+    margin-top: 110px;
+}
+.about{
+  background: #18BC9C;
   color: #fff;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 14px;
-  line-height: 20px;
-  display: inline;
-  padding: 0 22px;
-  font-family: "Montserrat";
+  padding: 107px 337px 0 337px;
+  font-size: 42px;
+  height: 548px;
+  width: 100%;
 }
-#tittle-pag{
-  font-size: 28px;
+.about p {
+  font-size: 20px;
+  font-family: "Lato";
+
+}
+.about a {
+  border-radius: 8px;
+  border:1px solid #fff;
+  padding: 15px 49px;
+color: #fff;
+  text-decoration: none;
+  font-family: "Lato";
+  font-size: 20px;
+}
+#tittle-about{
+  font-size: 42px;
+      font-weight: bold;
+      font-family: "montserrat";
+}
+hr {
+    width: 105px;
+    height: 7px;
+    background: #fff;
+    display: -webkit-inline-box;
+}
+
+#presentacion-tittle {
+    font-weight: bold;
+    font-size: 67px;
+}
+
+#presentacion-cont {
+    font-family: "Lato";
+    font-size: 25px;
+    font-weight: 300px;
+}
+
+.fa-star {
+    color: #fff;
+    font-size: 30px;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    background: #2C3E50;
+    width: 100%;
+    height: 100px;
+    z-index: 800;
+}
+.portafolio{
+  height: 910px;
+      padding: 0 145px;
+}
+
+.presentacion img {
+    width: 260px;
+    height: 260px;
+}
+.portafolio span {
+  color: #333333;
+}
+.portafolio hr {
+  background:  #333333;
+}
+#portafolio-tittle{
+  font-size: 42px;
+  font-weight: bold;
+  color: #333333;
+}
+.port-row{
+  width: 100%;
+}
+.nav-header {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: center;
+}
+
+.cont-enlace, .tittle {
+    color: #000;
+}
+.portafolio img {
+  width: 360px;
+  height: 260px;
+}
+.presentacion span{
+  margin: 0 20px;
+}
+
+.enlace {
+    color: #fff;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 20px;
+    display: inline;
+    padding: 0 22px;
+    font-family: "Montserrat";
+}
+
+#tittle-pag {
+    font-size: 28px;
+}
+.contac {
+  height: 809px;
+  width: 100%;
+  padding:  41px 333px;
+  color: #333333;
+}
+.contac hr {
+  background:  #333333;
+}
+.contac span {
+  color:#333333;
+}
+.formulario {
+  height: 76px;
+  border: 1px solid #EEEEEE;
+  border-left:  none;
+  border-right: none;
+  position: relative;
+}
+.contac input {
+  border: none;
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  top:20px;
+  left:  0;
+}
+textarea {
+  position: absolute;
+  top: 20px;
+  left: 0;
+  height: 0;
+  width: 100%;
+  height: 143px;
+  border: none;
+}
+#div-message{
+  height: 203px;
+}
+input[placeholder] , textarea[placeholder]{
+  font-size: 21px;
+  color: #555555;
+  font-family: "Lato";
+}
+input[type="button"]{
+  position: relative;
+  left: -341px;
+  border: 1px solid #fff;
+  width: 72px;
+  border-radius: 8px;
+  height: 46px;
+  color: #fff;
+  font-family: "Lato";
+  font-weight: bold;
+  font-size: 19px;
+  background: #18BC9C;
 }

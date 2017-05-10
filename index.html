@@ -8,32 +8,125 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 	<title>Document</title>
 </head>
 
 <body>
-
-	<body>
-		<header class="header">
-			<nav class="nav-header">
-				<div class="tittle">
-					<a id="tittle-pag" class="contenedor enlace" href="#">START BOOTSTRAP</a>
-				</div>
-				<div class="cont-enlace">
-					<a class="contenedor enlace" href="#">PORTFOLIO</a>
-					<a class="contenedor enlace" href="#">ABOUT</a>
-					<a class="contenedor enlace" href="#">CONTACT</a>
-				</div>
-			</nav>
-		</header>
-		<section class="presentacion">
+	<header class="header">
+		<nav class="nav-header">
+			<div class="tittle">
+				<a id="tittle-pag" class="contenedor enlace" href="#">START BOOTSTRAP</a>
+			</div>
+			<div class="cont-enlace">
+				<a class="contenedor enlace" href="#">PORTFOLIO</a>
+				<a class="contenedor enlace" href="#">ABOUT</a>
+				<a class="contenedor enlace" href="#">CONTACT</a>
+			</div>
+		</nav>
+	</header>
+	<section class="presentacion container">
+		<div class="row presentacion-fil">
+			<div class="col-12 presentacion-col">
 				<img src="assets/images/profile.png" alt="perfil">
-				<span> START BOOTSTRAP</span>
+				<p id="presentacion-tittle"> START BOOTSTRAP</p>
+				<hr><span class="fa fa-star"></span>
+				<hr>
+				<p id="presentacion-cont">Web Developer - Graphic Artist - User Experience Designer</p>
+			</div>
+
+		</div>
+
+	</section>
+	<section class="container portafolio">
+		<div class="row port-row">
+			<div class="col-12">
+				<p id="portafolio-tittle">PORTAFOLIO</p>
+				<hr><span class="fa fa-star "></span>
+				<hr>
+			</div>
+		</div>
+		<div class="row port-row">
+			<div class="col-4 product">
+				<img src="assets/images/portfolio/cabin.png" alt="">
+			</div>
+			<div class="col-4 product">
+				<img src="assets/images/portfolio/cake.png" alt="">
+			</div>
+			<div class="col-4 product">
+				<img src="assets/images/portfolio/circus.png" alt="">
+			</div>
+		</div>
+		<div class="row port-row">
+			<div class="col-4 product">
+				<img src="assets/images/portfolio/game.png" alt="">
+			</div>
+			<div class="col-4 product">
+				<img src="assets/images/portfolio/safe.png" alt="">
+			</div>
+			<div class="col-4 product">
+				<img src="assets/images/portfolio/submarine.png" alt="">
+			</div>
+		</div>
+	</section>
+	<section class="about container">
+		<div class="row">
+			<div class="col-12">
+				<p id="tittle-about">ABOUT</p>
 				<hr><span class="fa fa-star"></span><hr>
-				<span>Web Developer - Graphic Artist - User Experience Designer</span>
-		</section>
-	</body>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-6">
+				<p>				Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.
+</p>
+			</div>
+			<div class="col-6">
+				<p>Whether you're a student looking to showcase your work, a professional looking to attract clients, or a graphic artist looking to share your projects, this template is the perfect starting point!</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12">
+				<a href="#">Download Theme</a>
+			</div>
+		</div>
+
+	</section>
+	<section class="container contac">
+		<div class="row">
+			<div class="col-12">
+				<p id="tittle-about">CONTACT ME</p>
+				<hr><span class="fa fa-star"></span><hr>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-12 formulario">
+				<label for="name"></label>
+				<input type="text" id="name" placeholder="Name" name="" value="">
+				<p></p>
+			</div>
+			<div class="col-12 formulario">
+				<label for="email"></label>
+				<input type="text" id="email" placeholder="Email Address" name="" value="">
+				<p></p>
+			</div>
+			<div class="col-12 formulario">
+				<label for="phone"></label>
+				<input type="text" id="phone" placeholder="Phone Number" name="" value="">
+				<p></p>
+			</div>
+			<div id="div-message" class="col-12 formulario">
+				<label for="mesagge"></label>
+				<textarea id="message" placeholder="Message"  rows="8" cols="80"></textarea>
+				<p></p>
+			</div>
+			<div class="col-12">
+				<input type="button"  value="Enviar">
+			</div>
+		</div>
+	</section>
 </body>
+
 
 </html>
