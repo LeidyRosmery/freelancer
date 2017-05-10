@@ -228,10 +228,17 @@ textarea {
 #div-message{
   height: 203px;
 }
+.product:hover {
+  opacity: 0.4;
+}
 input[placeholder] , textarea[placeholder]{
   font-size: 21px;
   color: #555555;
   font-family: "Lato";
+  outline: none;
+}
+.enlace:hover{
+  color: #18BC9C;
 }
 input[type="button"]{
   position: relative;
@@ -245,4 +252,42 @@ input[type="button"]{
   font-weight: bold;
   font-size: 19px;
   background: #18BC9C;
+}
+.pie-pagina {
+  background: #2C3E50;
+      width: 100%;
+      height: 355px;
+      padding: 0 219px;
+}
+.up{
+  height: 270px;
+  margin-top: 23px;
+  display: flex;
+}
+.pie-pagina .dow {
+  height: 70px;
+  background: #233140;
+}
+.icon:hover {
+  color: #18BC9C;
+  background: #fff;
+}
+.pie-pagina p {
+  font-family: "Lato";
+  font-size: 20px;
+  line-height: 29px;
+}
+.tittle-pie{
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 45px;
+}
+
+.icon {
+  font-size: 100px;
+  border: solid 2px #fff;
+  border-radius: 20px;
+  padding: 10px;
+  margin: 5px;
 }
