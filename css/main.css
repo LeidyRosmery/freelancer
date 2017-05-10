@@ -130,7 +130,7 @@ hr {
     background: #2C3E50;
     width: 100%;
     height: 100px;
-    z-index: 800;
+    z-index: 10;
 }
 .portafolio{
   height: 910px;
@@ -147,6 +147,20 @@ hr {
 .portafolio hr {
   background:  #333333;
 }
+.modal hr{
+  color: #333333;
+}
+.modal span{
+    color: #3333;
+}
+.modal p{
+    color: #3333;
+}
+#img01{
+  width: 720px;
+  height: 521px;
+}
+
 #portafolio-tittle{
   font-size: 42px;
   font-weight: bold;
@@ -227,6 +241,42 @@ textarea {
 }
 #div-message{
   height: 203px;
+}
+#closeAll{
+  padding: 30px;
+  font-size: 126px;
+  position: absolute;
+  left: 1300px;
+  top: 0;
+
+}
+#closeAll:hover{
+  cursor: pointer;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 11;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #fff;
+    }
+
+
+/* Contenido del modal (imagen) */
+
+.modal-content {
+    margin: 0 500px;
+    position: absolute;
+    display: block;
+    width: 350px;
+    max-width: 350px;
+    border-radius: 8px;
+    border: 12px #fff solid;
 }
 .product:hover {
   opacity: 0.4;
